@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- stylesheet -->
+    <link href="./bootstrap.min.css" rel="stylesheet" />
+
+    <!-- icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta2/css/all.min.css" integrity="sha512-YWzhKL2whUzgiheMoBFwW8CKV4qpHQAEuvilg9FAn5VJUDwKZZxkJNuGM4XkWuk94WCrrwslk8yWNGmY1EduTA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>CSP BookList</title>
+
+    <style>
+
+
+        form{
+            width:90%;
+            margin:0 auto;
+        }
+
+        @media screen and (min-width:962px){
+            body{
+                width:40vw;
+                margin:0 auto;
+            }
+        }
+    </style>
+
+</head>
+<body>
+    <div class="container mt-4">
+        <h1 class="display-4 text-center">
+            <i class="fas fa-book-open text-danger"></i>
+            <br/>
+            <span classs="logo text-danger">CSP</span> </i> BookList
+        </h1>
+        <hr />
+        <form action="" id="book-form">
+            <div class="form-group  mt-2">
+                <label for="title">Title of the book</label>
+                <input type="text" id="title" class="form-control"  >
+            </div>
+
+            <div class="form-group mt-2">
+                <label for="title">Author of the book</label>
+                <input type="text" id="author" class="form-control"  >
+            </div>
+
+            <div class="form-group mt-2">
+                <label for="title">#ISBN</label>
+                <input type="text" id="isbn" class="form-control"   >
+            </div>
+            <div class="form-group mt-2 d-flex justify-content-center">
+                <input type="submit" value="Add Book" class="btn btn-primary btn-block">
+            </div>
+
+        </form>
+        <hr />
+        <!-- table -->
+        <table class="table table-striped mt-2">
+            <thead>
+                <tr>
+                    <th>Title</th>
+                    <th>Author</th>
+                    <th>ISBN#</th>
+                    <th>Action</th>
+                </tr>
+            </thead>
+            <tbody id="book-list">
+
+            </tbody>
+        </table>
+    </div>
+    <script type="text/javascript" src="./app.js"></script>
+</body>
+</html>
